@@ -5,7 +5,7 @@ import "./App.css";
 
 function App() {
   const onSearchChangeHandler = (searchData) => {
-    console.log(searchData);
+    const [lat, lon] = searchData.value.split(" ");
   };
   return (
     <div className="container">
