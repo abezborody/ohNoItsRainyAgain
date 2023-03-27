@@ -1,18 +1,19 @@
-import Search from "./components/Search/Search.component";
-import CurrentWeather from "./components/CurrentWeather/CurrentWeather.component";
-import Forecast from "./components/Forecast/Forecast.component";
+import Search from './components/Search/Search.component';
+import CurrentWeather from './components/CurrentWeather/CurrentWeather.component';
+import Forecast from './components/Forecast/Forecast.component';
 
-import { WEATHER_API_URL, WEATHER_API_KEY } from "./utils/api";
+import { WEATHER_API_URL, WEATHER_API_KEY } from './utils/api';
+import { motion } from 'framer-motion';
 
-import "./App.css";
-import { useState } from "react";
+import './App.css';
+import { useState } from 'react';
 
 function App() {
   const [currentWeather, setCurrentWeather] = useState(null);
   const [forecastWeather, setForecastWeather] = useState(null);
 
   const onSearchChangeHandler = (searchData) => {
-    const [lat, lon] = searchData.value.split(" ");
+    const [lat, lon] = searchData.value.split(' ');
 
     const currentWeatherFetch = fetch(
       `${WEATHER_API_URL}/weather?lat=${lat}&lon=${lon}&appid=${WEATHER_API_KEY}&units=metric`
@@ -38,8 +39,10 @@ function App() {
   // forecastWeather && console.log(forecastWeather);
 
   return (
-    <div className="container">
-      <Search onSearchChange={onSearchChangeHandler} />
+    <div className='container'>
+      <motion.div animate={{ opacity: 1 }} initial={{ opacity: 0 }}>
+        <Search onSearchChange={onSearchChangeHandler} />
+      </motion.div>
       {currentWeather && <CurrentWeather data={currentWeather} />}
       {forecastWeather && <Forecast data={forecastWeather} />}
     </div>
