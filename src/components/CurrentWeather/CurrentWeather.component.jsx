@@ -6,7 +6,7 @@ const CurrentWeather = ({ data }) => {
     <motion.div
       animate={{ y: 0, opacity: 1 }}
       initial={{ y: 16, opacity: 0 }}
-      transition={{ type: 'spring' }}
+      transition={{ type: 'spring', stiffness: 150 }}
     >
       <div className='currentWeather-container'>
         <div className='currentWeather-top'>

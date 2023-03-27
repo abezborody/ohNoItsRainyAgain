@@ -29,7 +29,7 @@ const Forecast = ({ data }) => {
       <motion.label
         animate={{ opacity: 1 }}
         initial={{ opacity: 0 }}
-        transition={{ delay: 0.2 }}
+        transition={{ delay: 0.2, duration: 0.5 }}
         className='forecast-title'
       >
         Daily
@@ -39,7 +39,11 @@ const Forecast = ({ data }) => {
           <motion.div
             animate={{ y: 0, opacity: 1 }}
             initial={{ y: 16, opacity: 0 }}
-            transition={{ type: 'spring', delay: 0.2 + index * 0.05 }}
+            transition={{
+              type: 'spring',
+              delay: 0.2 + index * 0.05,
+              stiffness: 150,
+            }}
           >
             <AccordionItem key={index}>
               <AccordionItemHeading>
