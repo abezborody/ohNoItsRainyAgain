@@ -6,6 +6,6 @@
 
 - [ReactJS](https://react.dev/)
 - [TypeScript](https://www.typescriptlang.org/)
-- [Tailwindcss](https://tailwindcss.com/)
+- HTML/CSS
 - [Framer Motion](https://www.npmjs.com/package/framer-motion/)
 
