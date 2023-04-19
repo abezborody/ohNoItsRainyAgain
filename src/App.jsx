@@ -40,6 +40,7 @@ function App() {
 
   return (
     <div className='container'>
+      <h2>Oh no, it's rainy again?</h2>
       <motion.div animate={{ opacity: 1 }} initial={{ opacity: 0 }}>
         <Search onSearchChange={onSearchChangeHandler} />
       </motion.div>
