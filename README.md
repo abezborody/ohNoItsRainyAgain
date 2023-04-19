@@ -1,5 +1,5 @@
 # ohNoItsRainyAgain. Small app to check weather.
-[Link to project](ohnoitsrainyagain.netlify.app)
+[Link to project](https://ohnoitsrainyagain.netlify.app/)
 ![app cover](ohNoItsRainyAgain-cover.png)
 ## Used stack: 
 
