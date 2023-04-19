@@ -1,12 +1,25 @@
 :root {
-  font-family: 'Roboto', Arial, Helvetica, sans-serif;
+  /* Colors palette: */
+  --sky-50: #f0f9ff;
+  --sky-100: #e0f2fe;
+  --sky-200: #bae6fd;
+  --sky-300: #7dd3fc;
+  --sky-400: #38bdf8;
+  --sky-500: #0ea5e9;
+  --sky-600: #0284c7;
+  --sky-700: #0369a1;
+  --sky-800: #075985;
+  --sky-900: #0c4a6e;
+  --sky-950: #082f49;
+
+  /* Font settings */
+  font-family: 'Rubik', Arial, Helvetica, sans-serif;
   font-size: 16px;
   line-height: 24px;
   font-weight: 400;
 
-  color-scheme: light dark;
-  color: #141414;
-  background-color: #d5d4d4;
+  color: var(--sky-950);
+  background-color: var(--sky-50);
 
   font-synthesis: none;
   text-rendering: optimizeLegibility;

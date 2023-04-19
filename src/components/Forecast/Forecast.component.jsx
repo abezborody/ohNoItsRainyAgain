@@ -51,8 +51,8 @@ const Forecast = ({ data }) => {
             >
               <AccordionItem>
                 <AccordionItemHeading>
-                  <AccordionItemButton onChange={}>
-                    <div className='daily-item '>
+                  <AccordionItemButton>
+                    <div className='daily-item'>
                       <img
                         alt='daily weather icon'
                         className='icon-small'
