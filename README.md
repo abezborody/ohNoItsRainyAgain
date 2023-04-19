@@ -4,7 +4,6 @@
 ## Used stack: 
 
 - [ReactJS](https://react.dev/)
-- [TypeScript](https://www.typescriptlang.org/)
 - HTML/CSS
 - [Framer Motion](https://www.npmjs.com/package/framer-motion/)
 - [react-select](https://react-select.com/home)
